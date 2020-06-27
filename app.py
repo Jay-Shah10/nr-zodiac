@@ -36,7 +36,7 @@ def scorpio():
 
 @app.route("/signs/taurus")
 def taurus():
-    return render_template('taurus')
+    return render_template('taurus.html')
 
 @app.route("/signs/sagittarius")
 def sagittarius():
