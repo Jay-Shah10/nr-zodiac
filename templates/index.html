@@ -1,10 +1,11 @@
 <!-- /templates/index.html --> 
-<html>
-	<body>
-		<h3> Hello World </h3>
-		<p> Here you will be able to see all of your zodiac signs and find out more about them.</p>
-		<br>
-		<br>
-		<a href="{{ url_for('showSigns') }}"> Sign </a>
-	</body>
-</html>
+{% extends 'main.html' %}
+
+{% block navbar %}
+{% include "navbar.html" %}
+{% endblock navbar %}
+
+{% block content %}
+  <a href="{{ url_for('showSigns') }}" class="bbtn btn-secondary btn-lg btn-block " id="mainbutton" role="button" aria-pressed="true">Signs</a>
+
+{% endblock content %}
