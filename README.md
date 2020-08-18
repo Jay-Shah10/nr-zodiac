@@ -34,3 +34,9 @@ Now you have your env running and you are now ready to code. To deactivate the e
 ```
 deactivate
 ```
+
+## Run with Docker
+After you have it developed using the above "How to", you can then write the Dockerfile.
+Review the Dockerfile to see what is needed and you can use start-docker-app.py to run the image as a container.  
+Using the steps found in hub.docker.com for python image - create your own Dockerfile and run it. 
+   
