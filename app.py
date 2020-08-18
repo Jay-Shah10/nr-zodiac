@@ -65,5 +65,5 @@ def aquarius():
 
 if __name__ == "__main__":
    # running the server.
-   app.run(debug = True)  # to allow for debugging and auto-reload
+   app.run(host='0.0.0.0', debug = True)  # to allow for debugging and auto-reload
 
