@@ -52,3 +52,4 @@ newrelic-admin generate-config YOUR_LICENSE_KEY newrelic.ini
 ```
 
 [New Relic Python Agent](https://docs.newrelic.com/docs/agents/python-agent/installation/standard-python-agent-install)   
+[Docker hub python](https://hub.docker.com/_/python)
