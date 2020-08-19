@@ -1,4 +1,3 @@
-import os
+import subprocess
 
-
-os.system("NEW_RELIC_CONFIG_FILE=newrelic.ini newrelic-admin run-program python app.py")
+subprocess.call(["./start-app.sh"])
