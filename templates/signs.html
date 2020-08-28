@@ -7,21 +7,21 @@
 
 {% block content %}
 
-<div id=signs>
-	<ul>
-		<li><a href="{{ url_for( 'aquarius' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Aquarius</a></li>
-		<li><a href="{{ url_for( 'pisces' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Pisces</a></li>
-		<li><a href="{{ url_for( 'aries' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Aries</a></li>
-		<li><a href="{{ url_for( 'taurus' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Taurus</a></li>
-		<li><a href="{{ url_for( 'gemini' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Gemini</a></li>
-		<li><a href="{{ url_for( 'cancer' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Cancer</a></li>
-		<li><a href="{{ url_for( 'leo' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Leo</a></li>
-		<li><a href="{{ url_for( 'virgo' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Virgo</a></li>
-		<li><a href="{{ url_for( 'libra' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Libra</a></li>
-		<li><a href="{{ url_for( 'scorpio' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Scorpio</a></li>
-		<li><a href="{{ url_for( 'sagittarius' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Sagittarius</a></li>
-		<li><a href="{{ url_for( 'capricorn' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Capricorn</a></li>
-	</ul>
+<div class="grid-container">
+	
+	<div class="grid-item"><a href="{{ url_for( 'pisces' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Pisces</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'aquarius' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Aquarius</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'aries' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Aries</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'taurus' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Taurus</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'gemini' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Gemini</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'cancer' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Cancer</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'leo' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Leo</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'virgo' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Virgo</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'libra' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Libra</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'scorpio' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Scorpio</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'sagittarius' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Sagittarius</a></div>
+	<div class="grid-item"><a href="{{ url_for( 'capricorn' ) }}" class="btn btn-outline-dark" role="button" aria-pressed="true">Capricorn</a></div>
+	
 
 </div>
 
