@@ -15,6 +15,8 @@ handler.setFormatter(formatter)
 root_logger = logging.getLogger()
 root_logger.addHandler(handler)
 
+logger = logging.getLogger(__name__)
+
 # ++++++++++++Navbar stuff +++++++++
 # defining a route.
 @app.route("/", methods=['GET'])
@@ -30,8 +32,8 @@ def showSigns():
 
 @app.route("/test_error")
 def testError():
-    logging.info("This is a test log info level.")
-    logging.debug("This is a test debug log.")
+    logger.info("This is a test log info level.")
+    logger.debug("This is a test debug log.")
     raise Exception("This is a test Error")
 # ++++++++++++++++++++++++++++++++
 
