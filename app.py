@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__) # name for the Flask app
 
+# ++++++++++++Navbar stuff +++++++++
 # defining a route.
 @app.route("/", methods=['GET'])
 def home():
@@ -13,6 +14,12 @@ def showSigns():
     This method is will show all the signs that are there.
     """
     return render_template('signs.html')
+
+@app.route("/test_error")
+def testError():
+    raise Exception("This is a test Error")
+# ++++++++++++++++++++++++++++++++
+
 
 @app.route("/signs/aries/")
 def aries():
