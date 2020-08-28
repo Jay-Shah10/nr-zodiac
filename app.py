@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import logging
 
 app = Flask(__name__) # name for the Flask app
 
@@ -17,6 +18,8 @@ def showSigns():
 
 @app.route("/test_error")
 def testError():
+    logging.info("This is a test log info level.")
+    logging.debug("This is a test debug log.")
     raise Exception("This is a test Error")
 # ++++++++++++++++++++++++++++++++
 
