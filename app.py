@@ -4,6 +4,7 @@ from newrelic.agent import NewRelicContextFormatter
 
 app = Flask(__name__) # name for the Flask app
 
+
 #Instantiate a new log handler.
 handler = logging.StreamHandler()
 
@@ -11,11 +12,10 @@ handler = logging.StreamHandler()
 formatter = NewRelicContextFormatter()
 handler.setFormatter(formatter)
 
-# Get the root logger and add the handler to ti. 
-root_logger = logging.getLogger()
+# Get the root logger and add the handler to it.
+root_logger = logging.getLogger() 
 root_logger.addHandler(handler)
 
-logger = logging.getLogger(__name__)
 
 # ++++++++++++Navbar stuff +++++++++
 # defining a route.
@@ -32,14 +32,16 @@ def showSigns():
 
 @app.route("/test_error")
 def testError():
-    logger.info("This is a test log info level.")
-    logger.debug("This is a test debug log.")
+    root_logger.info("This is a test log info level.")
+    root_logger.debug("This is a test debug log.")
     raise Exception("This is a test Error")
 # ++++++++++++++++++++++++++++++++
 
 
 @app.route("/signs/aries/")
 def aries():
+    root_logger.info("This is from root logger - INFO")
+    logging.info("This is from logging - INFO ")
     return render_template('aries.html')
 
 @app.route("/signs/leo")
