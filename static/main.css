@@ -17,3 +17,16 @@ li{
 #mainbutton{
     text-align: center;
 }
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px 100px;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    
+}
