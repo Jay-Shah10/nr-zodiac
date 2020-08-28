@@ -1,7 +1,19 @@
 from flask import Flask, render_template
 import logging
+from newrelic.agent import NewRelicContextFormatter
 
 app = Flask(__name__) # name for the Flask app
+
+#Instantiate a new log handler.
+handler = logging.StreamHandler()
+
+#Instantiate the log formatter and add it to the log handler
+formatter = NewRelicContextFormatter()
+handler.setFormatter(formatter)
+
+# Get the root logger and add the handler to ti. 
+root_logger = logging.getLogger()
+root_logger.addHandler(handler)
 
 # ++++++++++++Navbar stuff +++++++++
 # defining a route.
