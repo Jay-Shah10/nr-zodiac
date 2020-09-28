@@ -4,6 +4,7 @@ from newrelic.agent import NewRelicContextFormatter
 
 app = Flask(__name__) # name for the Flask app
 
+logging.basicConfig(filename='test_logs.txt', level=logging.INFO)
 
 #Instantiate a new log handler.
 handler = logging.StreamHandler()
